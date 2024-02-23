@@ -1,0 +1,83 @@
+//Primary
+
+$LightRed: hsl(0, 100%, 67%);
+$OrangeyYellow: hsl(39, 100%, 56%);
+$GreenTeal: hsl(166, 100%, 37%);
+$CobaltBlue: hsl(234, 85%, 45%);
+
+//Gradients
+// (background)
+
+$LightSlateBlue: hsl(252, 100%, 67%);
+$LightRoyalBlue: hsl(241, 81%, 54%);
+
+
+// (circle)
+$VioletBlue: hsla(256, 72%, 46%, 1);
+$PersianBlue: hsla(241, 72%, 46%, 0.8);
+
+// Neutral
+
+$White: hsl(0, 0%, 100%);
+$PaleBlue: hsl(221, 100%, 96%);
+$LightLavender: hsl(241, 100%, 89%);
+$DarkGrayBlue: hsl(224, 30%, 27%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:$PaleBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    flex-direction: column;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+
+
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-direction: row;
+    background-color: white;
+    // width: 1440px;
+    border-radius: 3rem;
+}
+
+.result{
+    width:50%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+    background: linear-gradient(180deg, hsla(252,100%, 67%,0.9), hsla(241,81%, 54%,1) 90%);
+    border-radius: 3rem;
+    color: white;
+
+    .main-display{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0.8)); 
+        text-align: center;
+    }
+}
+
+.summary{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
