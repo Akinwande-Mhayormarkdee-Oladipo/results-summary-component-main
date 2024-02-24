@@ -20,7 +20,9 @@ body {
   justify-content: center;
   flex-direction: row;
   background-color: white;
+  max-width: 1440px;
   border-radius: 3rem;
+  margin-bottom: 1rem;
 }
 
 .result {
@@ -29,17 +31,47 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem;
-  gap: 1rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  gap: 2rem;
   background: linear-gradient(180deg, hsla(252, 100%, 67%, 0.9), hsl(241, 81%, 54%) 90%);
   border-radius: 3rem;
   color: white;
 }
+.result h4 {
+  color: hsla(0, 0%, 100%, 0.8);
+}
 .result .main-display {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 12rem;
+  height: 12rem;
   background: radial-gradient(circle, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0.8));
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.result .main-display h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+.result .main-display p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  color: hsla(0, 0%, 100%, 0.8);
+}
+.result h3 {
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+}
+.result p {
+  width: 65%;
   text-align: center;
 }
 
@@ -48,4 +80,73 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
+  text-align: left;
+}
+.summary .summary-text {
+  width: 85%;
+}
+.summary .summary-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+  text-align: left;
+  margin: 0.8rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.summary .summary-tab div {
+  display: flex;
+}
+.summary .summary-tab .icon {
+  margin-right: 0.5rem;
+  display: inline;
+}
+.summary .summary-tab h4 {
+  text-align: left;
+  margin-right: 2rem;
+}
+.summary .reaction {
+  background-color: hsla(0, 100%, 67%, 0.2);
+}
+.summary .reaction div {
+  color: hsl(0, 100%, 67%);
+}
+.summary .memory {
+  background-color: hsla(39, 100%, 56%, 0.2);
+}
+.summary .memory div {
+  color: hsl(39, 100%, 56%);
+}
+.summary .verbal {
+  background-color: hsla(166, 100%, 37%, 0.2);
+}
+.summary .verbal div {
+  color: hsl(166, 100%, 37%);
+}
+.summary .visual {
+  background-color: hsla(234, 85%, 45%, 0.2);
+}
+.summary .visual div {
+  color: hsl(234, 85%, 45%);
+}
+.summary button {
+  width: 85%;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.summary button:hover {
+  background: linear-gradient(180deg, hsla(252, 100%, 67%, 0.9), hsl(241, 81%, 54%) 90%);
+  background-color: burlywood;
 }/*# sourceMappingURL=styles.css.map */
