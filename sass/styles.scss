@@ -112,7 +112,6 @@ body{
     p{
         width: 65%;
         text-align: center;
-        
     }
 }
 
@@ -204,4 +203,44 @@ body{
     }
 
     
+}
+
+@media screen and (max-width: 780px){
+    body{
+        margin-top: 0rem;
+    }
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+        height:fit-content;
+        align-items: center;
+        // justify-content: center;
+        margin-top: 0;
+        border-radius: 0 0 2rem 2rem;
+    }
+    .result{
+        width: 100%;
+        border-radius: 0 0 2rem 2rem;
+        h3{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 1.2rem;
+        }
+        p{
+            width: 60%;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .main-display p{
+            font-size: 1rem;
+        }
+    }
+    .summary {
+        width: 100%;
+
+        .summary-text{
+            font-size: 1.2rem;
+        }
+    }
 }
